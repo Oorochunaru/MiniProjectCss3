@@ -1,9 +1,11 @@
 .container{
     display: flex;
     max-width: 1000px;
-    margin: 50px auto;/*Centrer le container*/
-    border-bottom: 4px solid #3c6565;
+    margin: 100px auto;/*Centrer le container*/
+    /* border-bottom: 4px solid #3c6565;  */
 }
+
+/* EDIT PARTI GAUCHE*/
 .pGauche{
     /* background-color: #9ddcdc; */
     background-color: #3c6565;
@@ -91,22 +93,22 @@ ul {
     list-style: none;
 }
 
-a{
+p a{
     color: white;
     text-decoration: none;
 }
-a:hover{
+p a:hover{
     opacity:50%;
-    text-transform:uppercase;
+    text-decoration: underline;
 }
 
 /* -------------------------------------------------------- */
 
 .pDroit{
-    background-color:#ffffff;
+    background-color:whitesmoke;
     padding: 3px 20px;
     width: 600px;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 .rayleight{
@@ -132,22 +134,10 @@ a:hover{
 }
 
 /* ________________big education and experience ____________________ */
-.separator-item{
-    
-    text-align: center;
-    padding: 20px;
-}
-.headXp{
 
-    letter-spacing: 2px;
-    position: relative;
-    display: inline-block;
-    font-family: "Montserrat",sans-serif;
-    font-weight: 400;
-    font-size: large;
-}
+ 
 
-.headXp::before,
+/* .headXp::before,
 .headXp::after{
     content: " ";
     position: absolute;
@@ -171,12 +161,12 @@ a:hover{
     display: flex;
     justify-content: center;
     gap:100px;
-}
+} */
 
 /* __________________languages and computer____________________ */
 
 
-.headXpLC{
+/* .headXpLC{
     letter-spacing: 2px;
     position: relative;
     display: inline-block;
@@ -202,7 +192,7 @@ a:hover{
 .headXpLC::after{
     left: 100%;
     margin-left: 15px;
-}
+} */
 
 
 .langage ul,
@@ -215,6 +205,67 @@ a:hover{
     display:inline;
     font-weight: 400;
     font-size:large ;
-    
+    /* line-height: 10px; */
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+.lorX1,
+.lorX2,
+.eduX1,
+.eduX2{
+    line-height: 20px;
+}
+
+/*    Debut effet flotant  */
+.lorX1:hover,
+.lorX2:hover,
+.eduX1:hover,
+.eduX2:hover{
+    transform:translateX(10px);
+    color: #2d4b4b;
+}
+
+
+/*  Fin effet flotant  */
+
+/*  new modif  */
+
+.line{
+    width: 200px;
+    height: 4px;
+    background-color: #3c6565;
+    border-radius: 3px;
+    margin: 0 15px;
+}
+.lineExpert,
+.childline{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.lineExpert h2,
+.childline h2{
+    font-family: "Montserrat",sans-serif;
+    font-weight: 400;
+    font-size: large;
+    letter-spacing: 2px;
+}
+
+/*  parti langue et computer */
+
+.Lang-Comp{
+    display: flex;
+}
+.cLine{
+    width: 90px;
+    height: 4px;
+    background-color: #3c6565;
+    border-radius: 3px;
+    margin: 0 15px;
+}
+
+.lineLC ul{
+    padding-left: 130px;
+}
+
